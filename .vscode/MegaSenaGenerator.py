@@ -27,7 +27,6 @@ lista.append(modaBola5)
 lista.append(modaBola6)
 lista.sort()
 
-
 print(f"MODA - POR ORDEM DE BOLA {lista}")
 
 lista.clear()
