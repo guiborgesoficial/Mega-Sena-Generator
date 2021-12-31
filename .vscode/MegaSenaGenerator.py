@@ -19,17 +19,15 @@ ocorrenciaBola5 = collections.Counter(planilha['bola 5'])
 ocorrenciaBola6 = collections.Counter(planilha['bola 6'])
 
 lista = list()
-contador = 0
-while True:
-    num = random.randint(1, 60)
-    if num not in lista:
-        if num == modaBola1 or num == modaBola2 or num == modaBola3 or num == modaBola4 or num == modaBola5 or num == modaBola6:
-            lista.append(num)
-            contador += 1
-    if contador >= 6:
-        break    
-
+lista.append(modaBola1)
+lista.append(modaBola2)
+lista.append(modaBola3)
+lista.append(modaBola4)
+lista.append(modaBola5)
+lista.append(modaBola6)
 lista.sort()
+
+
 print(f"MODA - POR ORDEM DE BOLA {lista}")
 
 lista.clear()
